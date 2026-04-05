@@ -61,7 +61,7 @@ app.post("/register", (req, res) => {
     ], (err, result) => {
         if (err) {
             console.log(err);
-            res.send("Registration failed");
+            res.send("Registration failed 👽");
         } else {
             res.redirect("/");
         }
@@ -87,11 +87,11 @@ app.post("/login", (req, res) => {
                 res.redirect("/");
 
             } else {
-                res.send("Wrong password");
+                res.send("Wrong password 👺");
             }
 
         } else {
-            res.send("User not found");
+            res.send("User not found 👽");
         }
 
     });
@@ -285,6 +285,7 @@ app.get("/", (req, res) => {
     <select name="gender">
     <option>Male</option>
     <option>Female</option>
+    <option>Trans</option>
     </select>
     <input name="qualification" placeholder="Qualification">
     <select name="role">
@@ -301,7 +302,7 @@ app.get("/", (req, res) => {
     </div>
 
     <footer>
-    Made by Md Aquib,(24U021021)
+    🥳 Made by Md Aquib,(24U021021) 🥳
     </footer>
     
     <script>
